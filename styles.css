@@ -101,47 +101,41 @@ a:hover{
 }
 	
 /* HEADER HAVIGATION */
-#nav{ 
-	width: 800px;
-	margin: 10px 0 10px 0;
-	padding: 0;
-	list-style: none;
-}
-#nav li.home {
-	border: none;
-	list-style: none;
-}
-#nav li{
-	display: inline;
-	border-left: 1px #666 solid;
+#nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #001f66; /* navbar background */
 }
 
-#nav a{
-	text-transform: capitalize;
-	text-decoration: none;
-	font-size: 0.95em;
-	font-weight: bold;
-	color: #075f78;
-	padding: 0 12px;
+/* NORMAL links */
+#nav li a {
+    display: block;
+    padding: 14px 22px;
+    color: #e6ecff;            /* slightly off-white */
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.25s ease;
 }
 
-#nav a:hover{
-	text-decoration:underline;
+/* HOVER */
+#nav li a:hover {
+    background-color: #003cb3;
+    color: #ffffff;
 }
 
-#nav li.sel a {
-	color: #6D121F;
+/* ACTIVE / SELECTED */
+#nav li.active a {
+    background-color: #ffffff;
+    color: #001f66;
+    font-weight: 700;
+    border-bottom: 3px solid #001f66;
 }
 
-#nav li.sel a:hover {
-	text-decoration: none;
-}
 
-#home .home a, #publications .publications a, #teaching .teaching a,  #syllabus .syllabus a, #schedule .schedule a, #ps .ps a, #exams .exams a, #links .links a
-{
-text-decoration: none;
-color: #6D121F
-} 
+
+
 
 /*Horizontal Rules*/
 hr{ 
@@ -362,4 +356,28 @@ ul.select-pubs > li {
     list-style-type:none;
     padding-bottom:0.75em;
     font-size:0.9em;
+}
+
+
+
+
+table_grade {
+	width: 100%;
+	border-collapse: collapse;
+}
+th_grade, td_grade {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+th_grade {
+	background-color: #f2f2f2;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    padding-left: 31px;
+    border-radius: 30%;
+    object-fit: cover;
 }
