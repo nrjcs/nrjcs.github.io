@@ -92,7 +92,7 @@ body {
 
 .profile-pic {
   width: 180px;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 /* =========================
@@ -109,7 +109,7 @@ h3 {
 }
 
 h1 {
-  font-size: 2.6rem;
+  font-size: 2rem;
   margin-bottom: 0.25em;
 }
 
@@ -163,13 +163,22 @@ li {
    Links
    ========================= */
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
+
 
 a:hover {
   text-decoration: underline;
+}
+
+
+.link-muted {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #aaa;
+}
+
+.link-muted:hover,
+.link-muted:focus {
+  text-decoration-color: currentColor;
 }
 
 /* =========================
@@ -207,4 +216,88 @@ a:hover {
   body {
     font-size: 1.05rem;
   }
+}
+
+/* =========================
+Quote
+   ========================= */
+
+.quote {
+  margin: 1.5em 0;
+  padding-left: 1em;
+  border-left: 2px solid #bbb;
+  font-style: normal;
+  color: #333;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 0.4em;
+  font-size: 0.85em;
+  color: #555;
+}
+
+/* =========================
+   Publications
+   ========================= */
+  
+/* ===== Publications list ===== */
+
+.pubs {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Each publication entry */
+.pubs li {
+  margin-bottom: 1.4rem;
+  line-height: 1.55;
+  padding-left: 0.75rem;
+  border-left: 2px solid #e6e6e6;
+}
+
+/* [C] / [J] / [WiP] tag */
+.pub-tag {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #666;
+  margin-right: 0.4rem;
+}
+
+/* Paper title */
+.pubs strong {
+  font-weight: 600;
+}
+
+/* Conference / journal name */
+.pub-venue {
+  color: #4a6fa5;      /* muted, confident blue */
+  font-weight: 500;
+}
+
+/* Default publication links (DOI, others) */
+.pubs a {
+  margin-left: 0.5rem;
+  font-size: 0.9em;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #aaa;
+}
+
+/* Hover state for default links */
+.pubs a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* PDF link – blue text only */
+.pubs a.pdf-link {
+  color: #1a73e8;      /* readable, familiar blue */
+  font-weight: 500;
+}
+
+/* PDF hover */
+.pubs a.pdf-link:hover {
+  text-decoration-color: #1a73e8;
 }
