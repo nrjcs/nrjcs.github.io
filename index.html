@@ -2,169 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Niraj Kumar | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="styles.css">
+  <title>Niraj Kumar | Assistant Professor, IIT Goa</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
 
-<header>
-  <div class="nav">
-    <div class="name">Dr. Niraj Kumar</div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <!-- <a href="teaching.html">Teaching</a> -->
-      <a href="resources.html">Useful Resources</a>
-    </div>
-  </div>
-</header>
+<body id="home">
+  <div id="page">
 
-<div class="hero">
+    <!-- =====================
+         Navigation
+    ====================== -->
+    <nav>
+      <ul id="nav">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <!-- <li><a href="./teachings.html">Teachings</a></li> -->
+        <!-- <li><a href="./research.html">Research</a></li> -->
+        <li><a href="./pub.html">Publications</a></li>
+        <li><a href="./res.html">Useful Resources</a></li>
+      </ul>
+    </nav>
 
-  <img src="profile.jpg" alt="Dr. Niraj Kumar" class="avatar">
+    <!-- =====================
+         Main Content
+    ====================== -->
+    <main id="content">
 
-  <div>
-    <h1>Dr. Niraj Kumar</h1>
-    <p class="subtitle">Assistant Professor</p>
-    <p class="affiliation">
-      School of Mathematics and Computer Science (CSE)<br />
-      Indian Institute of Technology (IIT) Goa, India
-    </p>
-  </div>
+      <!-- Profile Header -->
+      <header>
+        <div id="detailsRightt">
+          <img
+            src="./profile.jpg"
+            alt="Niraj Kumar"
+            class="profile-pic"
+          />
+        </div>
 
-  <!-- Quote moved here -->
-  <div class="quote hero-quote">
-    We can only see a short distance ahead, but we can see plenty there that needs to be done.
-    <span class="quote-author">[Alan Turing]</span>
-  </div>
+        <h1>Niraj Kumar</h1>
 
-</div>
+        <p class="subtitle">
+          Assistant Professor<br />
+          School of Mathematics and Computer Science (CSE)<br />
+          Indian Institute of Technology (IIT) Goa, India
+        </p>
 
+        <p class="subtitle">
+          <strong>Email:</strong> niraj[at]iitgoa.ac.in<br />
+          <a href="https://scholar.google.co.in/citations?user=j6nPTCwAAAAJ&hl=en"  class="link-muted">
+            My Google Scholar Profile
+          </a>
+        </p>
+      </header>
 
-<div class="container">
+      <!-- Quote -->
+      <blockquote class="quote">
+        We can only see a short distance ahead, but we can see plenty there that needs to be done. 
+        <cite>— Alan Turing</cite>
+      </blockquote>
 
-<div class="announcement-banner">
-  
-  <div class="announcement-header">
-    <span class="announcement-icon">📢</span>
-    <span class="announcement-title">Announcements</span>
-  </div>
-
-  <ul class="announcement-list">
-    <li>
-      Summer internship positions  
-<a href="https://iitgoa.ac.in/summer-internships-2026-iit-goa/" 
-   class="link-muted" 
-   target="_blank" 
-   rel="noopener noreferrer">Apply here</a> (Deadline - April 13, 2026). 
-
-<span class="muted-note">
-Please note that these positions are unpaid, so apply only if this arrangement works for you. 
-Due to time constraints, I may not be able to respond to all individual inquiries, my apologies and all the best!
-</span>
-    </li>
-    <li>
-      Recruiting PhD students for Autumn 2026 
-      <a href="#" class="link-muted">To be released</a>
-    </li>
-    <!-- <li>
-      Paper accepted at NeurIPS 2025
-    </li>
-    <li>
-      New course on Machine Learning launched
-    </li>
-  -->
-  </ul>
-
-</div>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am currently an Assistant Professor in the School of Mathematics and Computer Science (CSE) at <a href="https://www.iitgoa.ac.in"  class="link-muted" target="_blank">IIT Goa</a>. I received my PhD from IIT Patna under the supervision of <a href="https://www.iitp.ac.in/~arijit/web/"  class="link-muted" target="_blank">Dr. Arijit Mondal</a>. Prior to joining IIT Goa, I worked as an Assistant Professor at <a href="https://www.rgipt.ac.in/" class="link-muted" target="_blank">RGIPT Jais</a>. I have also worked as a Research Fellow in <a href="https://cps-research-group.github.io/" class="link-muted" target="_blank">CPS lab</a> with <a href="https://personal.ntu.edu.sg/arvinde/" class="link-muted" target="_blank">Dr. Arvind Easwaran</a> at NTU Singapore. My broad research interests lie in the design and analysis of Cyber-Physical Systems, with a particular focus on Real-Time Systems.
-      <br><br>
-      <p class="profile-links">
-  See also: 
-  <a href="https://scholar.google.co.in/citations?user=j6nPTCwAAAAJ&hl=en" class="scholar" target="_blank" rel="noopener noreferrer">Google Scholar</a> 
-  <a href="https://www.linkedin.com/in/niraj-kumar-189276a2/" class="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-</p> 
-    </p>
-  </section>
-
- <!-- Research Interests -->
-  <section>
-    <h2>Research Interests</h2>
-    <p>Real-Time Systems, Cyber-Physical Systems</p>
-  </section>
-
-  <!-- Teachings -->
-  <section>
-    <h2>Teachings</h2>
-    <ul>
-      <li><strong>CS212 (Computer Networks)</strong> 2025/26</li>
-      <li><strong>CS310 (Operating Systems)</strong> 2024/25</li>
-    </ul>
-  </section>
-
-  <!-- Professional Appointments -->
-  <section>
-    <h2>Professional Appointments</h2>
-    <ul>
-      <li>
-        Assistant Professor, IIT Goa (July 2024 – Present)
-      </li>
-      <li>
-        Research Fellow, Nanyang Technological University, Singapore (Feb 2023 – Jun 2024)
-      </li>
-      <li>
-        Assistant Professor, Rajiv Gandhi Institute of Petroleum Technology, Amethi
-        (Oct 2021 – Feb 2023)
-      </li>
-    </ul>
-  </section>
-
-  <!-- Services -->
-  <section>
-    <h2>Services</h2>
-    <ul>
-      <li>Reviewer for IEEE Transactions on Computers, IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, Journal of Communications and Networks, VLSID</li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section>
-    <h2>Contact Details</h2>
-    <ul>
-      <li>
-        <strong>Mailing Address:</strong>
-        FC-10, Prefab Cabin B, IIT Goa, Farmagudi, Ponda, Goa 403401
-      </li>
-      <li><strong>Office:</strong> FC-10, Prefab Cabin B</li>
-      <li><strong>Email:</strong> niraj@iitgoa.ac.in</li>
-      <li><strong>Phone:</strong> +91 832 249 0919</li>
-    </ul>
+      <!-- Biography -->
+      <section class="author_bio">
+        <h2>About Me</h2>
+        <p>
+          I am currently an Assistant Professor in the School of Mathematics and Computer Science (CSE) at IIT Goa. I received my PhD from IIT Patna under the supervision of <a href="https://www.iitp.ac.in/~arijit/web/"  class="link-muted">Dr. Arijit Mondal</a>. Prior to joining IIT Goa, I worked as an Assistant Professor at <a href="https://www.rgipt.ac.in/" class="link-muted">RGIPT Jais</a>. I have also worked as a Research Fellow in <a href="https://cps-research-group.github.io/" class="link-muted">CPS lab</a> with <a href="https://personal.ntu.edu.sg/arvinde/" class="link-muted">Dr. Arvind Easwaran</a> at NTU Singapore. My broad research interests lie in the design and analysis of Cyber-Physical Systems, with a particular focus on Real-Time Systems.
+        </p>
       </section>
-</div>
 
-<footer>
+      <!-- Research Interests -->
+      <section>
+        <h2>Teachings</h2>
+        <ul>
+          <li>CS212 (Computer Networks), Spring 2026 </li>
+          <li>CS310 (Operating Systems), Autumn 2025 </li>
+          <li>CS212 (Computer Networks), Spring 2025 </li>
+          <li>CS310 (Operating Systems), Autumn 2024 </li>
+        </ul>
+      </section>
 
-</footer>
 
-<script>
-  // Active navbar highlighting
-  const links = document.querySelectorAll('.nav a');
-  const currentPage = window.location.pathname.split('/').pop();
+      <!-- Research Interests -->
+      <section>
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Real-Time Systems</li>
+          <li>Cyber-Physical Systems</li>
+        </ul>
+      </section>
 
-  links.forEach(link => {
-    const linkPage = link.getAttribute('href');
-    if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
-      link.classList.add('active');
-    }
-  });
-</script>
+      <!-- Professional Appointments -->
+      <section>
+        <h2>Professional Appointments</h2>
+        <ul>
+          <li>
+            Assistant Professor, IIT Goa (July 2024 – Present)
+          </li>
+          <li>
+            Research Fellow, Nanyang Technological University, Singapore (Feb 2023 – Jun 2024)
+          </li>
+          <li>
+            Assistant Professor, Rajiv Gandhi Institute of Petroleum Technology, Amethi
+            (Oct 2021 – Feb 2023)
+          </li>
+        </ul>
+      </section>
 
+      <!-- Services -->
+      <section>
+        <h2>Services</h2>
+        <ul>
+          <li>
+            Reviewer for IEEE Transactions on Computers, IEEE Transactions on Computer-Aided Design
+            of Integrated Circuits and Systems, Journal of Communications and Networks, VLSID
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section>
+        <h2>Contact Details</h2>
+        <ul>
+          <li>
+            <strong>Mailing Address:</strong>
+            FC-11, Prefab Cabin A, IIT Goa, Farmagudi, Ponda, Goa 403401
+          </li>
+          <li><strong>Office:</strong> FC-10, Prefab Cabin B</li>
+          <li><strong>Email:</strong> niraj@iitgoa.ac.in</li>
+          <li><strong>Phone:</strong> +91 832 249 0919</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- =====================
+         Footer
+    ====================== -->
+    <footer id="footer">
+      <hr class="hr" />
+    </footer>
+
+  </div>
 </body>
 </html>
