@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Research | Dr. Niraj Kumar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
 <div class="container">
   <h1>Research</h1>
     <p>
-        Cyber-Physical Systems (CPS) tightly integrate computation with physical processes, while Real-Time Systems (RTS) require both logical correctness and strict timing guarantees. My research focuses on resource management, timing analysis, and scheduling for multicore/distributed systems, automotive systems, edge computing systems, and real-time networking, with a primary focus on FlexRay, LoRa (Long Range), and TSN (Time-Sensitive Networking). The goal is to design efficient and predictable solutions for real-time cyber-physical systems, including embedded, safety-critical, mission-critical, and resource-constrained systems.
+        Cyber-Physical Systems (CPS) tightly integrate computation with physical processes, while Real-Time Systems (RTS) require both logical correctness and strict timing guarantees. My research focuses on resource management, timing analysis, and scheduling for real-time and/or cyber-physical systems. My research revolves around designing efficient and predictable solutions for embedded/safety-critical/mission-critical/resource-constrained systems.
     </p>
 
   <section>
@@ -37,73 +38,91 @@
      <div class="thread-title">      
         Real-Time Communication
         </div>
-        <p class="thread-desc">
+        <div class="thread-desc">
+          <p>
             In this thread, we focus on real-time communication with a primary emphasis on  
-            <ul>
-                <li>In-vehicle networks (e.g., FlexRay, Time-Sensitive Networking)</li>
-                <li>Low-Power Wide-Area Networks (LPWANs), in particular LoRa</li>
-            </ul>
-            Each system has its own unique challenges and opportunities for real-time communication. We design scheduling algorithms and resource management techniques to provide real-time guarantees while considering the specific constraints and characteristics of each system. For instance, in FlexRay-based in-vehicle networks, we address issues such as precedence constraints and event-triggered communication. In LoRa-based LPWANs, we tackle challenges related to limited parallel reception and half-duplex operation to enable real-time communication in resource-constrained environments.
-        </p>
-        <p class="thread-keywords">
-            <strong>Keywords:</strong> LoRa, LPWAN, Real-Time Communication, Scheduling, In-Vehicle Networks, FlexRay, TSN
-        </p>
-        <ul class="thread-pubs">
-            <li>
-            <em>LoRaHART: Hardware-Aware Real-Time Scheduling for LoRa</em>. [ECRTS 2025] <a href="drops.dagstuhl.de/storage/00lipics/lipics-vol335-ecrts2025/LIPIcs.ECRTS.2025.10/LIPIcs.ECRTS.2025.10.pdf" class="link-muted" target="_blank">[pdf]</a>
-            </li>
-            <li>
-                <em>Timing analysis of precedence constraint messages scheduled with slot multiplexing over dynamic segment of FlexRay</em>. [TASE 2020]
-            </li>
-            <li>
-                <em>Schedule Synthesis for the Messages with Precedence Constraint over Dynamic Segment of the FlexRay Protocol</em>. [ISED 2019]
-            </li>
-        </ul>
+          </p>
+
+          <ul>
+            <li>In-vehicle networks (e.g., FlexRay, Time-Sensitive Networking)</li>
+            <li>Low-Power Wide-Area Networks (LPWANs), in particular LoRa</li>
+          </ul>
+
+          <p>
+            The goal is to design scheduling algorithms and resource management techniques to provide timing guarantees while considering the specific constraints and characteristics of real-time networks.  
+            <!-- For instance, in FlexRay-based in-vehicle networks, we address issues such as precedence constraints and event-triggered communication. In LoRa-based LPWANs, we tackle challenges related to limited parallel reception and half-duplex operation to enable real-time communication in resource-constrained environments. -->
+          </p>
+        
+          <p class="thread-keywords">
+              <strong>Keywords:</strong> LoRa, LPWAN, Real-Time Communication, Scheduling, In-Vehicle Networks, FlexRay, TSN
+          </p>
+          <p>
+              <strong>Publications:</strong>
+          </p>
+          <ul class="thread-pubs">
+              <li>
+              <em>LoRaHART: Hardware-Aware Real-Time Scheduling for LoRa</em>. [ECRTS 2025] <a href="drops.dagstuhl.de/storage/00lipics/lipics-vol335-ecrts2025/LIPIcs.ECRTS.2025.10/LIPIcs.ECRTS.2025.10.pdf" class="link-muted" target="_blank">[pdf]</a>
+              </li>
+              <li>
+                  <em>Timing analysis of precedence constraint messages scheduled with slot multiplexing over dynamic segment of FlexRay</em>. [TASE 2020]
+              </li>
+              <li>
+                  <em>Schedule Synthesis for the Messages with Precedence Constraint over Dynamic Segment of the FlexRay Protocol</em>. [ISED 2019]
+              </li>
+          </ul>
+        </div>
     </details>
 
      <div class="thread-title">
         Real-Time Scheduling in Multicore/Distributed/Edge Computing Systems
         </div>
-        <p class="thread-desc">
+        <div class="thread-desc">
             This thread focuses on scheduling and resource management in a diverse range of systems. While they share some common characteristics, each system presents unique challenges. Resource contention, multiple types of resource requirements, precedence constraints, energy consumption, reliability, and mobility - even a subset of these - make the problem challenging. The goal is to enable predictable execution of real-time applications in such systems.
-        </p>
-        <p class="thread-keywords">
-            <strong>Keywords:</strong> Edge Computing, Mobile-Edge Computing, Job Offloading, Real-Time Scheduling, Resource Management, SDN
-        </p>
-        <ul class="thread-pubs">
-            <li>
-                <em>Energy-efficient real-time job mapping and resource management in mobile-edge computing</em>. [RTSS 2024] <a href="https://gaochuanchao.github.io/papers/Energy-Efficient%20Real-Time%20Job%20Mapping%20and%20Resource%20Management%20in%20Mobile-Edge%20Computing.pdf" class="link-muted" target="_blank">[pdf]</a>
-            </li>
-            <li>
-             <em>Optimal Fixed Priority Scheduling in Multi-Stage Multi-Resource Distributed Real-Time Systems</em>. [DATE 2024]<a href="https://gaochuanchao.github.io/papers/Optimal%20Fixed%20Priority%20Scheduling%20in%20Multi-Stage%20Multi-Resource%20Distributed%20Real-Time%20Systems.pdf" class="link-muted" target="_blank">[pdf]</a>
-            </li>
-            <li>
-            <em>Reliability Aware Energy Optimized Scheduling of Non-Preemptive Periodic Real-Time Tasks on Heterogeneous Multiprocessor System</em>. [TPDS 2020]
-            </li>
-            <li>
-            <em>Energy Optimized Non-preemptive Scheduling of Real-Time Tasks with Precedence and Reliability Constraints</em>. [VLSID 2022]
-            </li>
-            
-        </ul>
+        
+          <p class="thread-keywords">
+              <strong>Keywords:</strong> Edge Computing, Mobile-Edge Computing, Job Offloading, Real-Time Scheduling, Resource Management, SDN
+          </p>
+          <p>
+              <strong>Publications:</strong>
+          </p>
+          <ul class="thread-pubs">
+              <li>
+                  <em>Energy-efficient real-time job mapping and resource management in mobile-edge computing</em>. [RTSS 2024] <a href="https://gaochuanchao.github.io/papers/Energy-Efficient%20Real-Time%20Job%20Mapping%20and%20Resource%20Management%20in%20Mobile-Edge%20Computing.pdf" class="link-muted" target="_blank">[pdf]</a>
+              </li>
+              <li>
+              <em>Optimal Fixed Priority Scheduling in Multi-Stage Multi-Resource Distributed Real-Time Systems</em>. [DATE 2024]<a href="https://gaochuanchao.github.io/papers/Optimal%20Fixed%20Priority%20Scheduling%20in%20Multi-Stage%20Multi-Resource%20Distributed%20Real-Time%20Systems.pdf" class="link-muted" target="_blank">[pdf]</a>
+              </li>
+              <li>
+              <em>Reliability Aware Energy Optimized Scheduling of Non-Preemptive Periodic Real-Time Tasks on Heterogeneous Multiprocessor System</em>. [TPDS 2020]
+              </li>
+              <li>
+              <em>Energy Optimized Non-preemptive Scheduling of Real-Time Tasks with Precedence and Reliability Constraints</em>. [VLSID 2022]
+              </li>
+              
+          </ul>
+        </div>
     </details>
 
  
 
      <div class="thread-title">
-        
             Weakly-Hard Real-Time Scheduling
         </div>
-        <p class="thread-desc">
+        <div class="thread-desc">
            Weakly-hard real-time systems have more flexible timing requirements than hard real-time systems, allowing bounded timing violations while maintaining overall system performance. However, they also require solving additional problems, including deciding which jobs to accept or reject. In this thread, we explore scheduling techniques for providing timing guarantees for weakly-hard real-time applications while considering performance, energy consumption and reliability.
-        </p>
+        
         <p class="thread-keywords">
             <strong>Keywords:</strong> Weakly-Hard Real-Time Systems, Scheduling, Energy Optimization
         </p>
+        <p>
+              <strong>Publications:</strong>
+          </p>
         <ul class="thread-pubs">
             <li>
             <em>An ILP framework for energy optimized scheduling for weakly-hard real-time systems: Work-in-progress</em>. [EMSOFT 2019]
             </li>
         </ul>
+        </div>
     </details>
 
    </section>
